@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script language="JavaScript">
+        var abc = ['a', 'b', 'c'];
+        alert(abc);
+    // console-dump an array's contents:
+        function showArray() {
+            debugger;
+            alert(abc.length);
+    }
+    showArray();
+    alert(abc.length); // zero! 
+
+    // Self Invocation Function
+    (function () {
+        var x = "Hello!!";
+        alert(x);
+    })();
+
+    (function myFunc() {
+        var a = 100;
+        alert("Value of variable a is : " + a);
+    })();
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

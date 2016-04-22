@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript">
+        debugger;
+      function load() {
+        alert("load event detected!");
+      }
+      window.onload = load;
+
+    //Onclick Event Dynamically
+      function initElement() {
+          var p = document.getElementById("foo");       
+          p.onclick = showAlert;
+      };
+
+      function showAlert() {
+          alert("onclick Event detected!")
+      }
+      function OnSelectionChange(select) {
+          var selectedOption = select.options[select.selectedIndex];
+          alert("The selected option is " + selectedOption.value);
+      }
+    </script>
+</head>
+<body onload="initElement();">
+    <span id="foo">My Event Element</span>
+    <p>click on the above element.</p>
+
+    Select an item from the following list:<br />
+    <select onchange="OnSelectionChange (this)">
+        <option value="Apple" />Apple
+        <option value="Pear" />Pear
+        <option value="Peach" />Peach
+    </select>
+</body>
+</html>

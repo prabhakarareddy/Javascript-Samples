@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <script language="JavaScript">
+        function showAlert() {
+            alert("this is a user-defined function.");
+            var n = Math.PI; // 3.141592653589793
+            var str = String(n); // "3.141592653589793"
+            //str = str.substring(0, 4); // "3.14"
+            --str; // 2.14
+            //str += true; // 3.14 
+            alert(str);
+        }
+
+        function maths() {
+            a = 2; b = 3; c = "4";
+            alert(a + c); // "24"
+            alert(a * c); // 8
+            alert(a * b + c); // "64" 
+        }
+
+        function typeofOperator() {
+           alert(typeof Math.PI); // 'number'
+           alert(typeof "abc"); // 'string'
+           alert(typeof new String("abc")); // object
+           alert(typeof true); // 'boolean'
+           alert(typeof /\w+/); // 'function'
+           alert(typeof undefined); // 'undefined'
+           alert(typeof typeof NaN); // Can you guess?
+           alert(typeof typeof undefined); // Can you guess? 
+        }
+
+        function undefindValue() {
+            alert(x); // x is undefined
+            x = 9; // x is defined
+            x = undefined; // x is undefined
+            alert(x);
+        }
+
+        function nullUndefindCheck() {
+            alert(null == undefined); 
+            alert(null === undefined);
+            
+        }
+
+        function arrayProperties() {
+            var myObject = { 0: "CA", 1:"AZ",'New Hampshire': "NH"};
+            alert(myObject['0']); // 'CA'
+            alert(myObject[1]);
+            alert(myObject['New Hampshire']); // 'NH' 
+            alert(myString);
+        }
+
+        function stringArray() {
+           myString = "abcdefg";
+           alert(myString[3]); // "d"
+           alert("11" == 11);
+        }
+
+        //arrayProperties();
+        stringArray();
+        arrayProperties();
+    </script>
+    <!--<script src="filename.js"></script>-->
+    </head>
+    <body>
+        <input type="button" value="Run the Function"
+               onclick="typeofOperator()"> 
+    </body>
+    </html>

@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" language="javaScript">
+    function notEmpty() {
+        
+    }
+
+    function val() {        
+        var myTextField = document.getElementById('userName');
+        var mypasswordField = document.getElementById('passWord');
+        alert("U r userName and passWord :" + myTextField.value + "and " + mypasswordField.value)
+        alert(document.documentURI);
+        if (myTextField.value != "")
+            alert("You entered: " + myTextField.value)
+        else
+            alert("Would you please enter some text?")
+    };
+
+    function init() {
+
+        function onMouseUp(e) {
+            console.log(e);
+            var outputElement = document.getElementById('output-element');
+            var outputText = document.getElementById('output-text');
+            var selectedTextArea = document.activeElement;
+            var selection = selectedTextArea.value.substring(
+            selectedTextArea.selectionStart, selectedTextArea.selectionEnd);
+            outputElement.innerHTML = selectedTextArea.id;
+            outputText.innerHTML = selection;
+        }
+
+        document.getElementById("ta-example-one").addEventListener("mouseup", onMouseUp, false);
+        document.getElementById("ta-example-two").addEventListener("mouseup", onMouseUp, false);
+    }
+    </script>
+
+</head>
+<body>
+    <table><tr>
+               <td>
+                   UserName
+               </td>
+        <td>
+                   <input type='text' id='userName' />
+        </td>        
+        </tr>
+        <tr>
+            <td>
+                PassWord
+            </td>
+            <td>
+                <input type='text' id='passWord' />
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" colspan="2">
+                <input type='button' onclick='val()' value='Submit' />
+            </td>           
+        </tr>
+    </table>   
+
+    <form id="robby">
+        <input type="button" onclick="alert(document.forms[0].id);" value="robby's form" />
+    </form>
+
+    <form id="dave">
+        <input type="button" onclick="alert(document.forms[1].id);" value="dave's form" />
+    </form>
+
+    <form id="paul">
+        <input type="button" onclick="alert(document.forms[2].id);" value="paul's form" />
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,6 @@
+c:\users\prabhakarareddy\documents\visual studio 2013\Projects\Javascript Samples\Javascript Samples\bin\Javascript Samples.dll.config
+c:\users\prabhakarareddy\documents\visual studio 2013\Projects\Javascript Samples\Javascript Samples\bin\Javascript Samples.dll
+c:\users\prabhakarareddy\documents\visual studio 2013\Projects\Javascript Samples\Javascript Samples\bin\Javascript Samples.pdb
+c:\users\prabhakarareddy\documents\visual studio 2013\Projects\Javascript Samples\Javascript Samples\obj\Debug\Javascript Samples.csprojResolveAssemblyReference.cache
+c:\users\prabhakarareddy\documents\visual studio 2013\Projects\Javascript Samples\Javascript Samples\obj\Debug\Javascript Samples.dll
+c:\users\prabhakarareddy\documents\visual studio 2013\Projects\Javascript Samples\Javascript Samples\obj\Debug\Javascript Samples.pdb
